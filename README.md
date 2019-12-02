@@ -21,5 +21,10 @@ cp .env.sample .env
 **POSTGRES_DATABASES:**
 Nomes dos bancos de dados separados por vírgula que vão ser criados ao iniciar o container do postgres.
 
+## Usando
+```
+docker-compose up -d
+```
+
 ---
 Bom desenvolvimento! :)
