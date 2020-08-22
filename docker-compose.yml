@@ -23,6 +23,17 @@ services:
     volumes:
       - redis:/var/lib/redis
 
+  wiremock:
+    image: rodolpheche/wiremock
+    build:
+      context: .
+    command: --port 4000
+    hostname: wiremock
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./wiremock/stubs:/home/wiremock
+
 volumes:
   postgres:
   redis:

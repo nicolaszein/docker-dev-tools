@@ -1,0 +1,10 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPattern": "/users"
+  },
+  "response": {
+    "status": 201,
+    "bodyFileName": "create_user_response.json.example"
+  }
+}
